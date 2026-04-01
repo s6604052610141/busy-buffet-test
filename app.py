@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 st.set_page_config(page_title="Busy Buffet Dashboard", layout="wide")
-st.title("🍳 Busy Buffet: Data Analytics Dashboard")
+st.title("Busy Buffet: Data Analytics Dashboard")
 st.markdown("วิเคราะห์ปัญหาคิวและพฤติกรรมลูกค้า เพื่อหาทางออกที่ดีที่สุดให้ห้องอาหาร")
 
 @st.cache_data
