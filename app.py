@@ -45,7 +45,7 @@ with col1:
     st.plotly_chart(fig1, use_container_width=True)
     
     walkaway_count = df['Is_Walkaway'].sum()
-    st.error(f"สรุป: จริง! ลูกค้าต้องรอนานเฉลี่ย 28-38 นาที และเกิดการทิ้งคิว {walkaway_count} กลุ่ม")
+    st.error(f"สรุป: จริง ลูกค้าต้องรอนานเฉลี่ย 28-38 นาที และเกิดการทิ้งคิว {walkaway_count} กลุ่ม")
 
 with col2:
     st.subheader("2. ร้านยุ่งทุกวันจริงไหม?")
@@ -54,7 +54,7 @@ with col2:
                   title="จำนวนลูกค้า (คน) ในแต่ละวัน", barmode='group')
     st.plotly_chart(fig2, use_container_width=True)
     
-    st.warning("สรุป: ไม่จริงทั้งหมด! ร้านไม่ได้ยุ่งทุกวัน แต่ลูกค้า Walk-in ทะลักมาเฉพาะบางวัน")
+    st.warning("สรุป: ไม่จริงทั้งหมด ร้านไม่ได้ยุ่งทุกวัน แต่ลูกค้า Walk-in ทะลักมาเฉพาะบางวัน")
 
 with col3:
     st.subheader("3. ลูกค้านั่งแช่ทั้งวัน?")
@@ -64,7 +64,7 @@ with col3:
     st.plotly_chart(fig3, use_container_width=True)
     
     long_diners = len(diners[(diners['Guest_type'] == 'Walk in') & (diners['Meal_Time_Minutes'] > 120)])
-    st.error(f"สรุป: จริง! มีลูกค้า Walk-in ถึง {long_diners} กลุ่มที่นั่งทานเกิน 2 ชั่วโมง ส่งผลให้การหมุนเวียนรอบโต๊ะลดลง")
+    st.error(f"สรุป: จริง มีลูกค้า Walk-in ถึง {long_diners} กลุ่มที่นั่งทานเกิน 2 ชั่วโมง ส่งผลให้การหมุนเวียนรอบโต๊ะลดลง")
 
 st.divider()
 
