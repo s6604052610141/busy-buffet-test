@@ -64,7 +64,7 @@ with col3:
     st.plotly_chart(fig3, use_container_width=True)
     
     long_diners = len(diners[(diners['Guest_type'] == 'Walk in') & (diners['Meal_Time_Minutes'] > 120)])
-    st.error(f"สรุป: จริง! มีลูกค้า Walk-in ถึง {long_diners} กลุ่มที่นั่งทานเกิน 2 ชั่วโมง ส่งผลให้การหมุนเวียนโต๊ะลดลง")
+    st.error(f"สรุป: จริง! มีลูกค้า Walk-in ถึง {long_diners} กลุ่มที่นั่งทานเกิน 2 ชั่วโมง ส่งผลให้การหมุนเวียนรอบโต๊ะลดลง")
 
 st.divider()
 
